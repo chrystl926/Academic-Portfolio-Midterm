@@ -1,0 +1,211 @@
+.bodyBg{
+    background-color: #FFFCE1;
+    width: auto;
+    height: auto;
+}
+
+/*Navigation Bar*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E4E4E4;
+    padding: 10px 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.385);
+}
+
+.home-btn{
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    font-weight: 10px;
+    padding: 8px 12px;
+    font-weight: bold;
+}
+
+.navbar-links .home-btn a:hover {
+    background-color: #fffce1dc;
+    border-radius: 5px;
+}
+
+/*Hero Section*/
+
+.heroc{
+    background-image: url(assets/bgs/airTemple1.png);
+    background-size: cover;
+    width: 100%;
+    padding-block: 10%;
+    padding-inline: 15%;
+}
+
+.image {
+    max-width: 90vw;          
+    max-height: 85vh;         
+    width: auto;              
+    height: auto;             
+    display: block;           
+    margin: auto;             
+    position: absolute;       
+    inset: 0;                 
+    box-sizing: border-box;   
+    position: absolute;
+    top: 15%;
+}
+
+.btn-style{
+    position: absolute;
+    justify-content: flex-end;
+    top: 80%;
+    bottom: 2%;
+    padding-left: 35%;
+    margin: auto;
+    display: block;
+}
+
+/*About Section*/
+
+#about{
+    position: relative;
+    
+}
+
+.rectangle-about{
+    max-height: 90dvh;
+    max-width: 40vw;
+    min-height: fit-content;
+    min-width: fit-content;
+    width: auto;
+    height: auto;
+    background-color: #E4E4E4;
+    border-radius: 30px;
+    position: relative;
+    margin: auto;
+    inset: 0px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    min-height: fit-content;
+    min-width: fit-content;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.385);
+    text-align: center;
+    left: 25%;
+}
+
+.about-me{
+    font-size: 4vw;
+    font-weight: 700;
+    padding-inline: 5%;
+}
+
+.about-me p{
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-justify: distribute-all-lines;
+}
+
+.col-p1{
+    text-align: right;
+}
+
+.col-p2{
+    text-align: left;
+}
+
+.grid-container {
+    display: grid; /* Enable grid */
+    grid-template-columns: 2fr 3fr; /* Two columns of equal width */
+    gap: 5px; /* Space between the divs */
+}
+
+/*Contact Section*/
+#contact{
+    background-image: url(assets/bgs/airTemple2.png);
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    padding-left: 15%;
+    padding-left: 15%;
+}
+
+.rectangle-contact{
+    max-height: 90dvh;
+    max-width: 40vw;
+    min-height: fit-content;
+    min-width: fit-content;
+    width: auto;
+    height: auto;
+    background-color: #E4E4E4;
+    border-radius: 30px;
+    position: relative;
+    inset: 0px;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-inline: 2%;
+    padding-right: 6%;
+    min-height: fit-content;
+    min-width: fit-content;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.385);
+    text-align: center;
+}
+
+.contact-me{
+    font-size: 5vw;
+    font-weight: 700;
+    padding-block: 5%;
+    
+}
+
+.contact-me p{
+    font-size: 1.5vw;
+    font-weight: 500;
+    text-justify: distribute-all-lines;
+    
+}
+
+.grid-container2{
+    display: grid; /* Enable grid */
+    grid-template-columns: 1fr 1fr 1fr 1fr; /* Two columns of equal width */
+    gap: 2px; /* Space between the divs */
+    max-width: fit-content;
+    max-height: fit-content;
+    justify-items: center;
+    padding-inline: 5%;
+    position: relative;
+}
+
+.grid-container2 img{
+    max-width: 15vw;          
+    max-height: 15vh;         
+    width: auto;             
+    height: auto;
+    min-height: fit-content;
+    min-width: fit-content;             
+}
+
+#footer{
+    padding-inline: 15%;
+}
+
+.footer-grid{
+    display: grid;
+    grid-template-columns: 4fr 3fr; 
+    gap: 25px;
+}
+
+.footer-grid p{
+    font-size: 1vw;
+    font-weight: 500;
+    text-justify: distribute-all-lines;
+}

@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*Bodies ----------------------------------------------------*/
+body{
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: "navbar navbar" "sidebar main" "sidebar footer";
+    grid-template-rows: auto 1fr auto;
+}
+
+/*Navigation Bar*/
+nav{
+    top: 0;
+    grid-area: navbar;
+    background-color: #E4E4E4;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.385);
+
+    position: sticky;
+    z-index: 10;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 20px;
+
+}
+
+/*Side Bar ----------------------------------------------------*/
+aside{
+    height: 100vh;
+    width: 250px;
+    top: 56px;
+    position: fixed;
+    align-self: flex-start;
+    grid-area: sidebar;
+    background-color: #f5d5b1;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.385);
+    padding-block: 5rem;
+    padding-inline: 1rem;
+    z-index: 4;
+    overflow-y:auto;
+}
+
+aside a{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    color: black;
+}
+
+
+aside p{
+    font-size: 25px;
+    font-weight: 700;
+    color: black;
+}
+
+/*Main Contents ----------------------------------------------------*/
+main{
+    grid-area: main;
+    width: auto;
+    background-color: #FFFCE1;
+    background-attachment: fixed;
+}   
+
+/*Welcome Section ----------------------------------------------------*/
+
+#wc p, #dba_wc p{
+    font-weight: 700;
+    font-size: 75px;
+    text-align: center;
+    color: black;
+    text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.855);
+}
+
+#wc h1, #dba_wc h1{
+    font-weight: 700;
+    font-size: 110px;
+    text-align: center;
+    background: linear-gradient(to right, #2156f3, #18872a,#dd6312, #dace65);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text; 
+    -moz-background-clip: text;   
+    background-clip: text;    
+    -webkit-text-stroke: 2px white;
+}
+
+/*Activity Section ----------------------------------------------------*/
+
+#act .image-container, #qz .image-container, #dba_act .image-container, #dba_qz .image-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 5px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 2%;
+    position: relative;
+}
+
+#act .output-grid{
+    display: grid;
+    grid-template-columns: 350px 350px 200px; 
+    margin-block: 3%;
+}
+
+
+/*Homework Section ----------------------------------------------------*/
+
+#hw .body-modal-img, #dba_hw .body-modal-img{
+    max-width: 80vw;         
+    max-height: 100vh;
+    width: 40vw;       
+    height: 100vh;
+    margin-inline: 25%;
+}
+
+/*Reflection Section ----------------------------------------------------*/
+#reflect p, #act p, #hw p, #qz p, #grp p, #dba_reflect p, #dba_act p, #dba_hw p, #dba_qz p, #dba_grp p{
+    margin-inline: 10%;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+
+/*General Custom Contents ----------------------------------------------------*/
+
+#wc, #act, #hw, #qz, #grp, #reflect, #f, #dba_wc, #dba_act, #dba_hw, #dba_qz, #dba_grp, #dba_reflect, #dba_f{
+    height: 100vh;
+    padding-block: 8rem 3rem;
+    position: relative;
+    align-items: center;
+    padding-inline: 2rem 2rem;
+    
+}
+
+#act h1, #hw h1, #qz h1, #reflect h1, #grp h1, #f h1, #dba_act h1, #dba_hw h1, #dba_qz h1, #dba_grp h1, #dba_reflect h1, #dba_f h1{
+    font-weight: 700;
+    font-size: 75px;
+    text-align: center;
+    color: black;
+    text-shadow: 5px 5px 10px rgba(255, 255, 255, 0.855);
+}
+
+#act img,  #hw img, #qz img, #grp img, #dba_act img,  #dba_hw img, #dba_qz img, #dba_grp img{
+    max-width: 30vw;          
+    max-height: 30vh;         
+    width: auto;              
+    height: auto;             
+    margin: auto;             
+    min-width: auto;
+    min-height: auto;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.855);
+}
+
+#act .custom-modal, #hw .custom-modal, #qz .custom-modal, #grp .custom-modal, 
+#dba_act .custom-modal, #dba_hw .custom-modal, #dba_qz .custom-modal, #dba_grp .custom-modal{
+    max-width: 90vw;          
+    max-height: fit-content; 
+    align-content: center;
+}
+
+#act .modal-body, #hw .modal-body, #qz .modal-body, #grp .modal-body,
+#dba_act .modal-body, #dba_hw .modal-body, #dba_qz .modal-body, #dba_grp .modal-body{
+    padding-inline: 5%;
+}
+
+#act h2, #hw h2, #grp h2, #dba_act h2, #dba_hw h2, #dba_grp h2{
+    margin-block: 2%;
+}
+
+#act .img-modal, #hw .img-modal, #qz .img-modal,  #grp .img-modal,
+#dba_act .img-modal, #dba_hw .img-modal, #dba_qz .img-modal,  #dba_grp .img-modal{
+    max-width: 80vw;          
+    max-height: 100vh;
+}
+
+#act .external-file, #hw .external-file, #grp .external-file,
+#dba_act .external-file, #dba_hw .external-file, #dba_grp .external-file{
+    padding-inline: 10%;
+    padding-block: 3%;
+    max-width: fit-content;          
+    max-height: fit-content;
+}
+
+#act iframe, #hw iframe, #hw iframe, #grp iframe,
+#dba_act iframe, #dba_hw iframe, #dba_hw iframe, #dba_grp iframe{
+    width: 60vw;
+    height: 75vh;
+}
+
+#hw .image-container, #grp .image-container,
+#dba_hw .image-container, #dba_grp .image-container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    gap: 5px; 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 5%;
+    position: relative;
+}
+
+/*Footer ----------------------------------------------------*/
+footer{
+    grid-area: footer;
+    background-color: #f5d5b1;
+    display: grid;
+    grid-template-columns: 4fr 2fr; 
+    gap: 25px;
+}
+
+.footer-adjust p{
+    font-size: 1vw;
+    font-weight: 500;
+    text-justify: distribute-all-lines;
+    padding-inline: 5%;
+}
+
+@media(max-width: 800px){
+    body{
+        min-height: 100vh;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        grid-template-areas: "navbar navbar" "sidebar main" "sidebar footer";
+        grid-template-rows: auto 1fr auto;
+    }
+    
+    /*Side Bar ----------------------------------------------------*/
+
+    aside{
+        position: fixed;
+        width: 150px;
+    }
+
+    aside a{
+        font-size: 13px;
+    }
+
+
+    aside p{
+        font-size: 15px;
+    }
+
+    main{
+        width: fit-content;
+        height: fit-content;
+    }
+
+/*Welcome Section ----------------------------------------------------*/
+
+    #wc p{
+        font-weight: 700;
+        font-size: 60px;
+    }
+
+    #dba_wc p{
+        font-weight: 700;
+        font-size: 50px;
+    }
+
+    #wc h1{
+        font-weight: 700;
+        font-size: 80px;
+    }
+    
+    #dba_wc h1{
+        font-weight: 700;
+        font-size: 60px;
+    }
+
+/*Activity Section ----------------------------------------------------*/
+
+#act .image-container, #dba_act .image-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    display: flex;
+    gap: 15px;
+    padding: 2%;
+    position: relative;
+}
+
+#act .output-grid, #dba_act .output-grid{
+    display: grid; 
+    grid-template-columns: 200px 200px 200px;
+    margin-block: 3%;
+}
+
+
+/*General Custom Contents*/
+
+#act h1, #hw h1, #qz h1, #grp h1,
+#dba_act h1, #dba_hw h1, #dba_qz h1, #dba_grp h1{
+    font-weight: 700;
+    font-size: 60px;
+}
+
+#act img,  #hw img, #qz img, #grp img,
+#dba_act img,  #dba_hw img, #dba_qz img, #grp img{
+    max-width: 20vw;          
+    max-height: 20vh;         
+    width: auto;              
+    height: auto;             
+    margin: auto;             
+    min-width: auto;
+    min-height: auto;
+}
+
+}
